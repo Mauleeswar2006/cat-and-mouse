@@ -7,8 +7,8 @@ function preload() {
     CatAnimation2 = loadAnimation("images/cat2.png","images/cat3.png");
     CatAnimation3 = loadAnimation("images/cat4.png");
     mouseAnimation1 = loadAnimation("images/mouse1.png");
-    mouseAnimation2 = loadAnimation("images/mouse2.png","images/mouse3.png");
-    mouseAnimation3 = loadAnimation("images/mouse4.png");
+    mouseAnimation2 = loadAnimation("images/mouse2.png","images/mouse4.png");
+    mouseAnimation3 = loadAnimation("images/mouse3.png");
     gardenImg = loadImage("images/garden.png");
 }
 
