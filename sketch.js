@@ -23,7 +23,7 @@ function setup(){
     garden.scale = 2.5;
     */
 
-    cat = createSprite(870,600);
+    cat = createSprite(870,570);
     cat.addAnimation("Cat1",CatAnimation1)
     cat.addAnimation("Cat2",CatAnimation2)
     cat.addAnimation("Cat3",CatAnimation3)
