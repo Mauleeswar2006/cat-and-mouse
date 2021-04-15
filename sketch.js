@@ -29,7 +29,7 @@ function setup(){
     mouse.scale = 0.15;
     mouse,setCollider = true;
 
-    cat = createSprite(870,570);
+    cat = createSprite(870,600);
     cat.addAnimation("Cat1",CatAnimation1)
     cat.addAnimation("Cat2",CatAnimation2)
     cat.addAnimation("Cat3",CatAnimation3)
