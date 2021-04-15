@@ -46,7 +46,7 @@ function draw() {
         cat.velocityX = 0;
         mouse.velocityX = 0;
         cat.changeAnimation("Cat3",CatAnimation3);
-        mouse.changeAnimation("Mouse3",mouseAnimation3);
+        mouse.changeAnimation("Mouse2",mouseAnimation2);
         cat.x = 300;
     }
     drawSprites();
