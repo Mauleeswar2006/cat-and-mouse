@@ -22,7 +22,7 @@ function setup(){
     garden.addImage(gardenImg);
     garden.scale = 2.5;
     */
-    mouse = createSprite(200,600);
+    mouse = createSprite(200,570);
     mouse.addAnimation("Mouse1",mouseAnimation1);
     mouse.addAnimation("Mouse2",mouseAnimation2);
     mouse.addAnimation("Mouse3",mouseAnimation3);
