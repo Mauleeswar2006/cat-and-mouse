@@ -22,19 +22,20 @@ function setup(){
     garden.addImage(gardenImg);
     garden.scale = 2.5;
     */
-    mouse = createSprite(200,570);
-    mouse.addAnimation("Mouse1",mouseAnimation1);
-    mouse.addAnimation("Mouse2",mouseAnimation2);
-    mouse.addAnimation("Mouse3",mouseAnimation3);
-    mouse.scale = 0.15;
-    mouse,setCollider = true;
-
+    
     cat = createSprite(870,600);
     cat.addAnimation("Cat1",CatAnimation1)
     cat.addAnimation("Cat2",CatAnimation2)
     cat.addAnimation("Cat3",CatAnimation3)
     cat.scale = 0.2;
     cat.setCollider = true;
+    
+    mouse = createSprite(200,570);
+    mouse.addAnimation("Mouse1",mouseAnimation1);
+    mouse.addAnimation("Mouse2",mouseAnimation2);
+    mouse.addAnimation("Mouse3",mouseAnimation3);
+    mouse.scale = 0.15;
+    mouse,setCollider = true;
    
 }
 
