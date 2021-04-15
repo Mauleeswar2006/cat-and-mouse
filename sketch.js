@@ -43,7 +43,7 @@ function draw() {
     background(gardenImg);
 
     //Write condition here to evalute if tom and jerry collide
-    if (cat.x-mouse.x>cat.width/2-mouse.width/2){
+    if (cat.x-mouse.x>cat.width/2+mouse.width/2){
         cat.velocityX = 0;
         mouse.velocityX = 0;
         cat.changeAnimation("Cat3",CatAnimation3);
