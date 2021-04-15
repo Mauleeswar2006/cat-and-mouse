@@ -22,6 +22,11 @@ function setup(){
     garden.addImage(gardenImg);
     garden.scale = 2.5;
     */
+    mouse = createSprite(200,600);
+    mouse.addAnimation("Mouse1",mouseAnimation1);
+    mouse.addAnimation("Mouse2",mouseAnimation2);
+    mouse.addAnimation("Mouse3",mouseAnimation3);
+    mouse.scale = 0.15;
 
     cat = createSprite(870,570);
     cat.addAnimation("Cat1",CatAnimation1)
@@ -29,12 +34,7 @@ function setup(){
     cat.addAnimation("Cat3",CatAnimation3)
     cat.scale = 0.2;
 
-    mouse = createSprite(200,600);
-    mouse.addAnimation("Mouse1",mouseAnimation1);
-    mouse.addAnimation("Mouse2",mouseAnimation2);
-    mouse.addAnimation("Mouse3",mouseAnimation3);
-    mouse.scale = 0.15;
-
+   
 }
 
 function draw() {
