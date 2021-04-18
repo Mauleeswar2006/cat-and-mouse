@@ -7,8 +7,8 @@ function preload() {
     CatAnimation2 = loadAnimation("images/cat2.png","images/cat3.png");
     CatAnimation3 = loadAnimation("images/cat4.png");
     mouseAnimation1 = loadAnimation("images/mouse1.png");
-    mouseAnimation2 = loadAnimation("images/mouse2.png","images/mouse4.png");
-    mouseAnimation3 = loadAnimation("images/mouse3.png");
+    mouseAnimation2 = loadAnimation("images/mouse2.png","images/mouse3.png");
+    mouseAnimation3 = loadAnimation("images/mouse4.png");
     gardenImg = loadImage("images/garden.png");
 }
 
@@ -22,33 +22,34 @@ function setup(){
     garden.addImage(gardenImg);
     garden.scale = 2.5;
     */
-    
+
     cat = createSprite(870,600);
     cat.addAnimation("Cat1",CatAnimation1)
+    cat.scale = 0.2;
     cat.addAnimation("Cat2",CatAnimation2)
     cat.addAnimation("Cat3",CatAnimation3)
-    cat.scale = 0.2;
-    cat.setCollider = true;
     
-    mouse = createSprite(200,570);
+
+    mouse = createSprite(200,600);
     mouse.addAnimation("Mouse1",mouseAnimation1);
+    mouse.scale = 0.15;
     mouse.addAnimation("Mouse2",mouseAnimation2);
     mouse.addAnimation("Mouse3",mouseAnimation3);
-    mouse.scale = 0.15;
-    mouse,setCollider = true;
-   
-}
+    cat.setCollider("rectangle",0,0,cat.width,cat.height)  
+    mouse.setCollider("rectangle",0,0,mouse.width,mouse.height)
+    cat.debug = true;
+    mouse.debug = true;
+} 
 
 function draw() {
 
     background(gardenImg);
 
     //Write condition here to evalute if tom and jerry collide
-    if (cat.x-mouse.x>cat.width/2+mouse.width/2){
+    if (cat.x-mouse.x<cat.width/2+mouse.width/2){
         cat.velocityX = 0;
-        mouse.velocityX = 0;
         cat.changeAnimation("Cat3",CatAnimation3);
-        mouse.changeAnimation("Mouse2",mouseAnimation2);
+        mouse.changeAnimation("Mouse3",mouseAnimation3);
         cat.x = 300;
     }
     drawSprites();
@@ -62,8 +63,9 @@ function keyPressed(){
       cat.changeAnimation("Cat2",CatAnimation2);
       cat.velocityX = -5;
       mouse.frameDelay = 25;
-      
+    
+    
     //cat.addAnimation("catRunning",catAnimation);
-    mouse.changeAnimation("Mouse3",mouseAnimation3);
+    mouse.changeAnimation("Mouse2",mouseAnimation2);
 }
 }
