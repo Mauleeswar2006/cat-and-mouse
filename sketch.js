@@ -35,10 +35,12 @@ function setup(){
     mouse.scale = 0.15;
     mouse.addAnimation("Mouse2",mouseAnimation2);
     mouse.addAnimation("Mouse3",mouseAnimation3);
+    /*
     cat.setCollider("rectangle",0,0,cat.width,cat.height)  
     mouse.setCollider("rectangle",0,0,mouse.width,mouse.height)
     cat.debug = true;
     mouse.debug = true;
+    */
 } 
 
 function draw() {
